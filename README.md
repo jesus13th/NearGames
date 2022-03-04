@@ -71,4 +71,4 @@ near call $CONTRACT RegistrarVideojuego '{ "Name":"string", "Price":"string"}' -
 
 ## 🖥️ Interfáz gráfica de usuario
 
-    https://www.figma.com/team_invite/redeem/
+    https://www.figma.com/file/FWMc1JDnHZhRY9kfmlEobQ/NearGames?node-id=0%3A1

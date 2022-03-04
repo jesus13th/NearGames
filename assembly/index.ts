@@ -52,3 +52,8 @@ export function ConsultarVideojuego(Name : string): VideoGame | null{
       
   return null;
 }
+/*export function ComprarVideojuego(UserId: string, VideogameName : string): void{
+  let user = ConsultarUsuario(UserId);
+  if(user != null)
+    user.MyVideoGames.push(VideogameName);
+}*/

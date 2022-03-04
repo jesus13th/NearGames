@@ -4,6 +4,7 @@ import { PersistentVector } from "near-sdk-as";
 export class User{
     UserId: string;
     Email:string;
+    //MyVideoGames = new PersistentVector<string>("v");
 
     constructor(UserId: string, Email:string) {
         this.UserId = UserId;

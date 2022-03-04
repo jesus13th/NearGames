@@ -1,7 +1,6 @@
 {
-  "name": "Store-Games",
+  "name": "StoreGames",
   "version": "0.0.1",
-  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "build": "asb",
@@ -9,6 +8,8 @@
     "clean": "rm -rf ./build",
     "deploy": "near dev-deploy ./build/release/Store-Games.wasm"
   },
+  "author": "Jesus Robles",
+  "license": "ISC",
   "dependencies": {
     "near-sdk-as": "3.1.0"
   },
