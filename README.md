@@ -2,8 +2,8 @@
 
 # 📄 Descripción
 
-NearGames es un Smart-Contrat en el que los usuarios se pueden registar, crear juegos y los demas usuarios podran comprarlos.
-Las funcionalidades del Smart-Contrat son:
+NearGames es un Smart-Contratc en el que los usuarios se pueden registar, crear juegos y los demas usuarios podran comprarlos.
+Las funcionalidades del Smart-Contratc son:
 
 1. Crear Usuario.
 2. Consultar Usuario por su Id.
@@ -35,11 +35,15 @@ Configure su near-cli para autorizar su cuenta de prueba creada recientemente:
 
 ## Paso 3: Cree y realice una implementación de desarrollo de contrato inteligente
 
-Para crear el Smart-Contrat de NearGames en el servidor de desarrollo local ejecute la linea `yarn build`, Este comando crea el contrato inteligente y para desplegar el contrato, ejecutar el comando `yarn deploy`. Una vez generado, le mostrara su contrato con la iniciacion 'dev-'.
+Para crear el Smart-Contratc de NearGames en el servidor de desarrollo local ejecute la linea `yarn build`, Este comando crea el contrato inteligente y para desplegar el contrato, ejecutar el comando `yarn deploy`. Una vez generado, le mostrara su contrato con la iniciacion 'dev-'.
 
 # 📑 Explorando los métodos de contrato inteligente NearGames
 
-Las siguientes lineas de comando le permiten interactuar con los métodos del contrato inteligente utilizando NEAR CLI.
+Las siguientes lineas de comando le permiten interactuar con los métodos del Smart-Contract utilizando NEAR CLI.
+
+## Comando para ver si el contrato esta funcionando
+
+    near view $CONTRACT Prueba
 
 ## Comando para crear usuario:
 
@@ -64,10 +68,6 @@ near call $CONTRACT RegistrarVideojuego '{ "Name":"string", "Price":"string"}' -
 ## Comando para consultar un videojuego por nombre:
 
     near view $CONTRACT ConsultarVideojuego '{"Name":"string"}'
-
-## Comando para realizar la compra de un videojuego para un usuario:
-
-    near view $CONTRACT ComprarVideojuego '{"UserId":"string", "Name":"string"}'
 
 ## 🖥️ Interfáz gráfica de usuario
 

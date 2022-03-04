@@ -1,8 +1,8 @@
 import { logging } from 'near-sdk-as'
 import { User, Users, VideoGame, VideoGames } from "./Models";
 
-export function holaMundo(): string{
-  return "Hola mundo";
+export function Prueba(): string {
+  return "Si retorna este mensaje entonces funciona bien :D!!";
 }
 //----------------------------Metodos del smart contract de Users----------------------------//
 export function RegistrarUsuario(UserId: string, Email: string): void{
@@ -30,9 +30,9 @@ export function ConsultarUsuario(UserId : string): User | null{
 }
 
 //----------------------------Metodos del smart contract de VideoGames----------------------------//
-export function RegistrarVideojuego(Name: string, Price: number): void{
+export function RegistrarVideojuego(Name: string, Price: string): void{
   assert(Name.length > 0, "Introduce un Id del videojuego");
-  assert(Price > 0, "Introduce un Precio real");
+  assert(Price.length > 0, "Introduce un Precio real");
   VideoGames.push(new VideoGame(Name, Price));
 }
 export function ConsultarVideojuegos(): Array<VideoGame>{
@@ -51,9 +51,4 @@ export function ConsultarVideojuego(Name : string): VideoGame | null{
       return VideoGames[i];
       
   return null;
-}
-export function ComprarVideojuego(UserId: string, VideogameName : string): void{
-  let user = ConsultarUsuario(UserId);
-  if(user != null)
-    user.VideoGames.push(VideogameName);
 }
