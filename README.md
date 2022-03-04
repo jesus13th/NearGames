@@ -43,54 +43,32 @@ Las siguientes lineas de comando le permiten interactuar con los métodos del co
 
 ## Comando para crear usuario:
 
-    near call $CONTRACT registrarUsuario '{ "idCuenta":"string", "nombre":"string", "telefono":"string", "correo":"string", "password":"string"}' --account-id <your test account>
+    near call $CONTRACT RegistrarUsuario '{ "UserId":"string", "Email":"string"}' --account-id <your test account>
 
 ## Comando para consultar todos los usuarios:
 
-    near view $CONTRACT consultarUsuarios
+    near view $CONTRACT ConsultarUsuarios
 
 ## Comando para consultar un usuario por id:
 
-    near view $CONTRACT consultarUsuario '{"idCuenta":"cuenta.testnet"}'
+    near view $CONTRACT ConsultarUsuario '{"UserId":"string"}'
 
-## Comando para guardar un servicio:
+## Comando para Crear un videojuego
 
-    near call $CONTRACT registrarServicio '{ "nombre":"string", "descripción":"string", "costo":"u64", "idUsuario":"string"}' --account-id <your test account>
+near call $CONTRACT RegistrarVideojuego '{ "Name":"string", "Price":"string"}' --account-id <your test account>
 
-## Comando para consultar todos los servicios:
+## Comando para consultar todos los videojuegos:
 
-    near view $CONTRACT consultarServicios
+    near view $CONTRACT ConsultarVideojuegos
 
-## Comando para consultar todos los servicios de un usuario:
+## Comando para consultar un videojuego por nombre:
 
-    near view $CONTRACT consultarServiciosUsuario '{"idUsuario":"string"}'
+    near view $CONTRACT ConsultarVideojuego '{"Name":"string"}'
 
-## Comando para consultar un servicio por su id:
+## Comando para realizar la compra de un videojuego para un usuario:
 
-    near view $CONTRACT consultarServicio '{"idServicio":"string"}'
-
-## Comando para agregar un comentario a un servicio:
-
-    near call $CONTRACT agregarComentario '{"idServicio":"u64", "idUsuario":"string", "comentario":"string"}' --account-id <your test account>
-
-## Comando para consultar todos los comentarios de un servicio:
-
-    near view $CONTRACT consultarComentarios '{"idServicio":"u64"}'
-
-## Comando para agregar una valoracion a un servicio:
-
-    near call $CONTRACT agregarValoracion '{"idServicio":"u64", "idUsuario":"string", "valoracion":"u64"}' --account-id <your test account>
-
-## Comando para consultar todas las valoraciones de un servicio:
-
-    near view $CONTRACT consultarValoracion '{"idServicio":"u64"}'
-
-## 🤖 Pruebas
-
-Utilice el siguiente comando para ejecutar las pruebas:
-
-    yarn test
+    near view $CONTRACT ComprarVideojuego '{"UserId":"string", "Name":"string"}'
 
 ## 🖥️ Interfáz gráfica de usuario
 
-    https://www.figma.com/team_invite/redeem/Yzf4HvEJIRSqPXOGI2aUDZ
+    https://www.figma.com/team_invite/redeem/
