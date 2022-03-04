@@ -43,7 +43,7 @@ Las siguientes lineas de comando le permiten interactuar con los métodos del co
 
 ## Comando para crear usuario:
 
-    near call $CONTRACT RegistrarUsuario '{ "UserId":"string", "Email":"string"}' --account-id <your test account>
+    near call $CONTRACT RegistrarUsuario '{ "UserId":"string", "Email":"string"}' --account-id <"your test account">
 
 ## Comando para consultar todos los usuarios:
 
@@ -55,7 +55,7 @@ Las siguientes lineas de comando le permiten interactuar con los métodos del co
 
 ## Comando para Crear un videojuego
 
-near call $CONTRACT RegistrarVideojuego '{ "Name":"string", "Price":"string"}' --account-id <your test account>
+near call $CONTRACT RegistrarVideojuego '{ "Name":"string", "Price":"string"}' --account-id <"your testaccount">
 
 ## Comando para consultar todos los videojuegos:
 
