@@ -2,8 +2,8 @@
 
 # 📄 Descripción
 
-NearGames es un Smart-Contratc en el que los usuarios se pueden registar, crear juegos y los demas usuarios podran comprarlos.
-Las funcionalidades del Smart-Contratc son:
+NearGames es un Smart-Contract en el que los usuarios se pueden registar, crear juegos y los demas usuarios podran comprarlos.
+Las funcionalidades del Smart-Contract son:
 
 1. Crear Usuario.
 2. Consultar Usuario por su Id.
@@ -35,7 +35,7 @@ Configure su near-cli para autorizar su cuenta de prueba creada recientemente:
 
 ## Paso 3: Cree y realice una implementación de desarrollo de contrato inteligente
 
-Para crear el Smart-Contratc de NearGames en el servidor de desarrollo local ejecute la linea `yarn build`, Este comando crea el contrato inteligente y para desplegar el contrato, ejecutar el comando `yarn deploy`. Una vez generado, le mostrara su contrato con la iniciacion 'dev-'.
+Para crear el Smart-Contract de NearGames en el servidor de desarrollo local ejecute la linea `yarn build`, Este comando crea el contrato inteligente y para desplegar el contrato, ejecutar el comando `yarn deploy`. Una vez generado, le mostrara su contrato con la iniciacion 'dev-'.
 
 # 📑 Explorando los métodos de contrato inteligente NearGames
 
