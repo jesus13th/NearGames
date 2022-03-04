@@ -14,10 +14,12 @@ export class User{
 @nearBindgen
 export class VideoGame{
     public Name: string;
+    public Description: string;
     public Price: string;
 
-    constructor(Name: string, Price: string) {
+    constructor(Name: string, Description: string, Price: string) {
         this.Name = Name;
+        this.Description = Description;
         this.Price = Price;
     }
 }

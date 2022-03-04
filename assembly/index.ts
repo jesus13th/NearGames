@@ -30,10 +30,11 @@ export function ConsultarUsuario(UserId : string): User | null{
 }
 
 //----------------------------Metodos del smart contract de VideoGames----------------------------//
-export function RegistrarVideojuego(Name: string, Price: string): void{
+export function RegistrarVideojuego(Name: string, Description: string, Price: string): void{
   assert(Name.length > 0, "Introduce un Id del videojuego");
+  assert(Name.length > 0, "Introduce una descripcion del videojuego");
   assert(Price.length > 0, "Introduce un Precio real");
-  VideoGames.push(new VideoGame(Name, Price));
+  VideoGames.push(new VideoGame(Name, Description, Price));
 }
 export function ConsultarVideojuegos(): Array<VideoGame>{
   let result = new Array<VideoGame>(VideoGames.length);

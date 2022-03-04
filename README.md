@@ -59,7 +59,7 @@ Las siguientes lineas de comando le permiten interactuar con los métodos del Sm
 
 ## Comando para Crear un videojuego
 
-near call $CONTRACT RegistrarVideojuego '{ "Name":"string", "Price":"string"}' --account-id <"your testaccount">
+near call $CONTRACT RegistrarVideojuego '{ "Name":"string", "Description":"string", "Price":"string"}' --account-id <"your testaccount">
 
 ## Comando para consultar todos los videojuegos:
 
